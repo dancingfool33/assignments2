@@ -1,0 +1,139 @@
+body {
+		font-family: 'Didact Gothic', sans-serif;
+		/*background  image orange*/
+		background-image: url('../images/pattern3.gif');  /* I'll give myself credit for all 80s textures next round */
+		background-color: hsl(323, 72%, 94%);
+		background-repeat: repeat;
+		background-size: 150px;
+		}
+
+#wrapper {
+	  background-color: hsla(34, 39%, 85%, 0.8);
+   	width: 90%; margin-left: auto; margin-right: auto;
+         }
+#bannerbg {
+		/*background banner image light teal*/
+		background-image: url('../images/pattern2.gif'); /* Credit round 2 */
+		background-repeat: repeat;
+		background-size: 100px;
+		background-color: #A9F5F2;
+		margin: 0;
+		}
+
+
+/* navbar settings - black bar with color hover */
+#navbar ul {
+		padding: 10px;
+		background-color: black;
+		padding-left: 1em;
+		text-align: inherit;
+		text-transform: uppercase;
+		margin: 0;
+
+		}
+
+  /* navbar settings - set a navigation bar list to be horizontal : */
+#navbar ul li {
+		display: inline;
+		}
+
+#navbar ul li a {
+  	text-decoration: none;
+  	padding: 10px;
+  	color: white;
+  	}
+
+    /* navbar settings -
+    set a navigation bar to change color on hover
+    note: "a" is for each item on the navbar so it does not conflict with other links in the site
+    how do i get rid of black from border */
+
+#navbar ul li a:hover {
+    color: red;
+	  background-color: #00ff00;
+    }
+
+/*show what page is active*/
+#navbar li a:active {
+	  background-color: red;
+		color: white;
+				}
+
+
+
+footer {
+		padding: 2em;
+		background-color: #A9F5F2;
+		}
+
+/* home Page */
+#content {padding: 2em; margin: 0;}
+/* Menu Page */
+#menu {padding: 2em; margin: 0; background-color: hsla(121, 57%, 82%, 0.76);}
+		h2.h2menu { color: hsl(274, 69%, 27%);}
+		h3.h3menu { color: hsl(274, 69%, 27%); margin-bottom: 0;}
+		p.menu  { margin: 0;}
+
+/* Takeout Page - reverse text dark Background*/
+		#takeout {
+		background-image: url('../images/pattern1.png'); /* Credit round 2 */
+		padding: 2em; margin: 0;
+		color: white;
+		text-shadow: 2px 2px 6px #000000;}
+div.pink {
+			background-image: url('../images/pattern150green.png'); /* Credit round 2 */
+			background-size: 100px;
+			margin: 0px;
+			margin-right: 40%;
+			padding: 10px;
+			}
+div.purple {
+			background-image: url('../images/pattern150.png'); /* Credit round 2 */
+			background-size: 100px;
+			margin: 0px;
+			margin-right: 40%;
+			padding: 10px;
+			}
+
+/* Events Page */
+#events {
+				padding: 2em;
+				background-color: hsla(220, 50%, 30%, 0.8);
+				}
+
+div.boxeve {
+			margin-bottom: 10px;
+			margin-right: 40%;
+			background-color: white;
+			border-style: solid;
+			border-width: 2px;
+			border-color: black;
+			border-radius: 2px;
+			background-size: 100px;
+			overflow: auto;
+			}
+time {
+			float: left;
+			align-content: center;
+			width: 75px; height: 70px;
+			color: white;
+			background-color: hsl(274, 69%, 27%);
+			border-right: 10px solid hsl(327, 100%, 50%);
+			margin: 2px 10px 2px 2px;
+			padding: 3px;
+			}
+
+
+			h1.h1eve {color: white;text-shadow: 2px 2px 6px #000000;}
+			h2.h2eve {color: white;text-shadow: 2px 2px 6px #000000;}
+			h3.h3eve {margin-bottom: 0px; margin-top: 0px;}
+			p.peve  { margin: 0px;}
+			p.pwhite {
+				color: white;
+				text-shadow: 2px 2px 6px #000000;}
+
+			a:link { color: #e9e1a8; text-decoration: none;font-weight: bold;}
+
+
+/* Location Page */
+#ctrtext {text-align: center; }
