@@ -20,17 +20,21 @@ body {
 		margin: 0;
 		}
 
-
-/* navbar settings - black bar with color hover */
-#navbar ul {
-		padding: 10px;
-		background-color: black;
-		padding-left: 1em;
-		text-align: inherit;
-		text-transform: uppercase;
-		margin: 0;
-
+/* navbar settings - purple bar with color hover */
+.navbar {
+		border-radius: 0;
+		background-color: hsla(278, 74%, 18%, 0.8);
+		border: none;
 		}
+
+.nav>navbar-nav {
+		font-family: 'Didact Gothic', sans-serif;
+		}
+.navbar-inverse .navbar-nav>li>a {
+	  color: #eee1a5;
+		text-transform: uppercase;}
+
+
 
   /* navbar settings - set a navigation bar list to be horizontal : */
 #navbar ul li {
@@ -67,73 +71,101 @@ footer {
 		}
 
 /* home Page */
-#content {padding: 2em; margin: 0;}
+#content {padding: 2em; margin: 0;
+					background-color:hsla(200, 57%, 82%, 0.76)}
+
+#content img {
+		min-width: inherit;
+		max-width: 600px;
+		width: 100%;
+		height: auto;
+		}
+
+/* sprites */
+#sprite-guitar {
+		height: 42px;
+		width: 42px;
+		background: url('../images/icons-1014585_960_720.png') -65px -437px ; /* source CC0 puplic domain source link= https://pixabay.com/en/icons-web-icons-icon-library-www-1014585/*/
+		float: left;
+		position: relative;
+		top: 20px;
+		margin-left: 18px;
+		margin-right: 5px;}
+
 /* Menu Page */
-#menu {padding: 2em; margin: 0; background-color: hsla(121, 57%, 82%, 0.76);}
+#menu { margin: 0; background-color: hsla(121, 57%, 82%, 0.76);}
 		h2.h2menu { color: hsl(274, 69%, 27%);}
 		h3.h3menu { color: hsl(274, 69%, 27%); margin-bottom: 0;}
 		p.menu  { margin: 0;}
 
 /* Takeout Page - reverse text dark Background*/
-		#takeout {
+#takeout {
 		background-image: url('../images/pattern1.png'); /* Credit round 2 */
-		padding: 2em; margin: 0;
+		margin: 0; padding: 0; padding-bottom: 20pt;
 		color: white;
 		text-shadow: 2px 2px 6px #000000;}
-div.pink {
-			background-image: url('../images/pattern150green.png'); /* Credit round 2 */
-			background-size: 100px;
-			margin: 0px;
-			margin-right: 40%;
-			padding: 10px;
+
+#takeout img {
+			min-width: inherit;
+			max-width: 600px;
+			width: 100%;
+			height: auto;
 			}
-div.purple {
-			background-image: url('../images/pattern150.png'); /* Credit round 2 */
-			background-size: 100px;
-			margin: 0px;
-			margin-right: 40%;
-			padding: 10px;
-			}
+
+div.green {
+		background-image: url('../images/pattern150green.png'); /* Credit round 2 */
+		background-size: 100px;
+		margin: 0px;
+		padding: 10px;
+		}
+div.white {
+		background-image: url('../images/animalwhite128.gif');
+		background-size: 100px;
+		margin: 0px;
+		padding: 20px;
+		color: black;
+		text-shadow: none;}
 
 /* Events Page */
 #events {
-				padding: 2em;
-				background-color: hsla(220, 50%, 30%, 0.8);
-				}
+		padding: 2em;
+		background-color: hsla(220, 50%, 30%, 0.8);
+		}
 
 div.boxeve {
-			margin-bottom: 10px;
-			margin-right: 40%;
-			background-color: white;
-			border-style: solid;
-			border-width: 2px;
-			border-color: black;
-			border-radius: 2px;
-			background-size: 100px;
-			overflow: auto;
+		margin-bottom: 10px;
+		background-color: white;
+		border-style: solid;
+		border-width: 2px;
+		border-color: black;
+		border-radius: 2px;
+		background-size: 100px;
+		overflow: auto;
 			}
-time {
-			float: left;
-			align-content: center;
-			width: 75px; height: 70px;
+div.datebox {
+		float: left;
+		align-content: center;
+		width: 75px; height: 70px;
+		color: white;
+		background-color: hsl(274, 69%, 27%);
+		border-right: 10px solid hsl(327, 100%, 50%);
+		margin: 2px 10px 2px 2px;
+		padding: 3px;
+		overflow: auto;
+		}
+div.day {align-content: center; font-size: small;}
+div.date {align-content: center; font-size: 24px;}
+div.hour {align-content: center;}
+
+	h1.h1eve {color: white;text-shadow: 2px 2px 6px #000000;}
+	h2.h2eve {color: white;text-shadow: 2px 2px 6px #000000; text-transform: uppercase;}
+	h3.h3eve {margin-bottom: 0px; margin-top: 0px;}
+	p.peve  { margin: 0px;}
+	p.pwhite {
 			color: white;
-			background-color: hsl(274, 69%, 27%);
-			border-right: 10px solid hsl(327, 100%, 50%);
-			margin: 2px 10px 2px 2px;
-			padding: 3px;
-			}
+			text-shadow: 2px 2px 6px #000000;}
 
-
-			h1.h1eve {color: white;text-shadow: 2px 2px 6px #000000;}
-			h2.h2eve {color: white;text-shadow: 2px 2px 6px #000000;}
-			h3.h3eve {margin-bottom: 0px; margin-top: 0px;}
-			p.peve  { margin: 0px;}
-			p.pwhite {
-				color: white;
-				text-shadow: 2px 2px 6px #000000;}
-
-			a:link { color: #e9e1a8; text-decoration: none;font-weight: bold;}
-
+	a:link { color: #e9e1a8; text-decoration: none;font-weight: bold;}
 
 /* Location Page */
 #ctrtext {text-align: center; }

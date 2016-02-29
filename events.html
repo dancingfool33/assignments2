@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>80s Radical Diner</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="favicon.ico" type="images/x-icon">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -12,62 +12,105 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-  <!--[if lt IE9]>
-  <script src=”http://html5shim.google.com/svn/trunk/html5.js”>
-  </script>
-  <![endif]-->
+<!-- mobile device endering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile device endering and touch zooming -->
+<link rel="stylesheet" href="assets/css/main.css">
+<!--[if lt IE9]>
+<script src=”http://html5shim.google.com/svn/trunk/html5.js”>
+</script>
+<![endif]-->
 
 <body>
       <div id="wrapper">
-      <header>
-  <!--Banner logo and container-->
+
+<!--Banner logo and container I'll credit next round-->
+<header>
   <div id="bannerbg">
     <a href="."></a>
       <img src="assets/images/80s_di.svg" alt="80's Radical Diner" style="width:250px;height:130px;">
   </div>
 </header>
-
-  <div id="navbar">
-    <ul>
-      <li><a href=".">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="takeout.html">Take out</a></li>
-      <li><a href="events.html">events</a></li>
-      <li><a href="location.html">Location</a></li>
-    </ul>
+<!-- nav bar  in bootstrap -->
+<nav class="navbar navbar-inverse">
+  <div calss="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href=".">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="takeout.html">Take out</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
   </div>
+</nav>
+
   <!--Page Title-->
 <div id="events">
+<img id="sprite-guitar">
   <h1 class="h1eve">Live Events at our Diner</h1>
-  <h2 class="h2eve"> July </h2>
-    <div class="boxeve">
-    <h3 class="h3eve">MICHAEL P. JACKSON</h3>
-    <p class="peve">Sat. July 5 8-11pm</P>
-  </div>
+  <div class="container-fluid">
+
+    <h2 class="h2eve">June</h2>
+<div class="row">
+<div class="col-sm-6">
+<!-- Event 1 -->
   <div class="boxeve">
-    <h3 class="h3eve">TEARS FOR GEARS - <small>Tribute band</small></h3>
-    <p class="peve">Sat. July 12 8-11pm</P>
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">5</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">MICHAEL P. JACKSON</h3>
+    <p class="peve">Tribute band</P>
+  </div>
 
-    </div>
+<!-- Event 2 -->
+  <div class="boxeve">
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">12</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">TEARS FOR GEARS</h3>
+    <p class="peve">Tribute band</P>
+  </div>
+
+<!-- Event 3 -->
+  <div class="boxeve">
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">17</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">GG TOP</h3>
+    <p class="peve">Tribute band</P>
+  </div>
+
+<!-- event 4 -->
     <div class="boxeve">
-      <h3 class="h3eve">GG TOP - <small>Tribute band</small></h3>
-      <p class="peve">Sat. July 17 8-11pm</P>
-
+      <div class="datebox">
+        <div class="day">Saturday</div>
+        <div class="date">28</div>
+        <div class="hour">6-12pm</div>
+      </div>
+        <h3 class="h3eve">WAVE-OKE NIGHT</h3>
+        <p class="peve">your chance to sing</P>
     </div>
-    <div class="boxeve">
-      <time>Sat.<br>July 28<br>6-12pm</time>
-      <h3 class="h3eve">WAVE-OKE NIGHT- <small>your chance to sing</small></h3>
-
-    </div>
-<br>
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ijgbkqdeq1ri1cuntehdlig1l0%40group.calendar.google.com&amp;color=%23e770bd&amp;ctz=America%2FVancouver" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
     <p class="pwhite"> next month we feature hair metal bands. Next week vote for your favourite band to be featured here.
       for now check out <a href="http://www.laweekly.com/music/the-15-best-hair-metal-bands-of-all-time-4170807">www.laweekly.com </a> list of top hair metal bands </p>
 </div>
+<!-- right half of page  -->
+    <div class="col-sm-6">  add somting </div>
+</div>
+
+<br>
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ijgbkqdeq1ri1cuntehdlig1l0%40group.calendar.google.com&amp;color=%23e770bd&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 
-<footer> &copy; Copyright: 80′s Radical Diner - Open: Monday – Sunday: 7am-3pm</footer>
+</div>
+
+
+<footer> &copy; Copyright: 80′s Radical Diner - Open: Monday – Sunday: 7am-11pm</footer>
   </div>
 </body>
 </html>

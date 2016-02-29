@@ -3,46 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>80s Radical Diner</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="favicon.ico" type="images/x-icon">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
   <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+<!-- mobile device endering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile device endering and touch zooming -->
+<link rel="stylesheet" href="assets/css/main.css">
+<!--[if lt IE9]>
+<script src=”http://html5shim.google.com/svn/trunk/html5.js”>
+</script>
+<![endif]-->
 
-  <body>
+<body>
       <div id="wrapper">
-      <header>
-      <!--Banner logo and container I'll credit next round-->
+
+<!--Banner logo and container I'll credit next round-->
+<header>
   <div id="bannerbg">
     <a href="."></a>
       <img src="assets/images/80s_di.svg" alt="80's Radical Diner" style="width:250px;height:130px;">
   </div>
 </header>
-
-  <div id="navbar">
-    <ul>
-      <li><a href=".">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="takeout.html">Take out</a></li>
-      <li><a href="events.html">events</a></li>
-      <li><a href="location.html">Location</a></li>
-    </ul>
+<!-- nav bar  in bootstrap -->
+<nav class="navbar navbar-inverse">
+  <div calss="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href=".">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="takeout.html">Take out</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
   </div>
+</nav>
+
+<!-- content 2 colum  in bootstrap -->
 <div id="menu">
-  <!--Page Title-->
-<h1>Menu</h1>
-  <h2 class="h2menu">Breakfast</h2>
-  <h3 class="h3menu">Two Eggs Any Style $6.25</h3>
-  <p class="menu">homefries, toast, choice of bacon or sausages</P>
-  <h3 class="h3menu">Buttermilk Pancakes $9.50</h3>
-  <p class="menu">3 pancakes, choice of bacon or sausage </P>
-  <P>add blueberries or bananas for $ 1</P>
-  <h3 class="h3menu">Omelette 3 egg omelette $11</h3>
-  <p class="menu">with salad or fries, choice of:</P>
-<ol>
-  <li>Home made maple bacon and swiss</li>
-  <li>Smoked brie, mushrooms, arugula</li>
-  <li>Piperade (slow cooked peppers and onions), goat cheese, tomato sauce</li>
-</ol>
+  <div class="container-fluid">
+    <!--Page Title-->
+    <h1>Menu</h1>
+      <div class= "row">
+        <div class=col-sm-6>
+<!-- 1 Breakfast  -->
+          <h2 class="h2menu">Breakfast</h2>
+          <h3 class="h3menu">Two Eggs Any Style $6.25</h3>
+          <p class="menu">homefries, toast, choice of bacon or sausages</P>
+          <h3 class="h3menu">Buttermilk Pancakes $9.50</h3>
+          <p class="menu">3 pancakes, choice of bacon or sausage </P>
+          <P>add blueberries or bananas for $ 1</P>
+          <h3 class="h3menu">Omelette 3 egg omelette $11</h3>
+          <p class="menu">with salad or fries, choice of:</P>
+          <ol>
+            <li>Home made maple bacon and swiss</li>
+            <li>Smoked brie, mushrooms, arugula</li>
+            <li>Piperade (slow cooked peppers and onions), goat cheese, tomato sauce</li>
+          </ol>
+          </div>
+<!-- 2 Burgers  -->
+      <div class=col-sm-6>
+        <h2 class="h2menu">Burgers</h2>
+        <h3 class="h3menu">Family Ties Burger $14.50</h3>
+        <p class="menu"> A cheese lover’s dream, BBQ cheddar, bacon and mushroom.</p>
+        <h3 class="h3menu">Pac-Man Burger $14.85</h3>
+        <p class="menu"> Swiss, Mozzarella and pickle. So good, it's like an arcade classic.</p>
+        <h3 class="h3menu">Full House Burger $16.90</h3>
+        <p class="menu"> Twin pattys, cheddar, mozzarella, bacon and mushrooms with dill pickles  a heck of a deal.</p>
+      </div>
+    </div>
+  </div>
 </div>
-<footer> &copy; Copyright: 80′s Radical Diner - Open: Monday – Sunday: 7am-3pm</footer>
+
+<footer> &copy; Copyright: 80′s Radical Diner - Open: Monday – Sunday: 7am-11pm</footer>
   </div>
 </body>
 </html>
