@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>80s Radical Diner</title>
-  <link rel="icon" href="favicon.ico" type="images/x-icon">
+  <link rel="icon" href="favicon.ico" type="images/x-icon"> <!-- favicon.ico: created by Randy Lamont 2016 CC0 -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -11,6 +11,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Latest compiled and minified CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Corben:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 <!-- mobile device endering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,31 +24,40 @@
 
 <body>
       <div id="wrapper">
-
-<!--Banner logo and container I'll credit next round-->
 <header>
   <div id="bannerbg">
-    <a href="."></a>
+    <a href="index.html"></a>
+    <div class="hidden-xs"> <!-- hide svg logo on screens under <768px wide -->
       <img src="assets/images/80s_di.svg" alt="80's Radical Diner" style="width:250px;height:130px;">
+      <!-- Credit svg logo: "80s_di.svg" created by Randy Lamont 2016 CC0 -->
+    </div>
   </div>
 </header>
-<!-- nav bar  in bootstrap -->
+<!-- bootstrap navbar credit source: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
 <nav class="navbar navbar-inverse">
-  <div calss="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href=".">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="takeout.html">Take out</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="location.html">Location</a></li>
+  <div class="container-fluid">
+    <div class="visible-xs">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">80's Radical Diner</a>
+    </div>
+  </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="takeout.html">Take out</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="location.html">Location</a></li>
       </ul>
   </div>
 </nav>
 
-<!-- content 2 colum  in bootstrap -->
+<!-- content 2 colum in bootstrap -->
 <div id="menu">
   <div class="container-fluid">
     <!--Page Title-->
+    <svg class="hidden-xs">
+      <polygon points="20,50 250,10 200,100"/>
+    </svg>
     <h1>Menu</h1>
       <div class= "row">
         <div class=col-sm-6>
@@ -79,6 +89,7 @@
     </div>
   </div>
 </div>
+
 
 <footer> &copy; Copyright: 80′s Radical Diner - Open: Monday – Sunday: 7am-11pm</footer>
   </div>

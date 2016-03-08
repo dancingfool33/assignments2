@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>80s Radical Diner</title>
-  <link rel="icon" href="favicon.ico" type="images/x-icon">
+  <link rel="icon" href="favicon.ico" type="images/x-icon"> <!-- favicon.ico: created by Randy Lamont 2016 CC0 -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -11,6 +11,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Latest compiled and minified CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Corben:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 <!-- mobile device endering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,36 +24,43 @@
 
 <body>
       <div id="wrapper">
-
-<!--Banner logo and container I'll credit next round-->
 <header>
   <div id="bannerbg">
-    <a href="."></a>
+    <a href="index.html"></a>
+    <div class="hidden-xs"> <!-- hide svg logo on screens under <768px wide -->
       <img src="assets/images/80s_di.svg" alt="80's Radical Diner" style="width:250px;height:130px;">
+      <!-- Credit svg logo: "80s_di.svg" created by Randy Lamont 2016 CC0 -->
+    </div>
   </div>
 </header>
-<!-- nav bar  in bootstrap -->
+<!-- bootstrap navbar credit source: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
 <nav class="navbar navbar-inverse">
-  <div calss="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href=".">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="takeout.html">Take out</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="location.html">Location</a></li>
+  <div class="container-fluid">
+    <div class="visible-xs">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">80's Radical Diner</a>
+    </div>
+  </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="takeout.html">Take out</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="location.html">Location</a></li>
       </ul>
   </div>
 </nav>
 
   <!--Page Title-->
 <div id="events">
+  <!-- Modified image "icons-1014585_960_720.png" Original file by pixelbay.com available here https://pixabay.com/en/icons-web-icons-icon-library-www-1014585/ Made available under public domain https://pixabay.com/en/service/terms/#usage image modified to transparent background png file by Randy Lamont 2016-->
 <img id="sprite-guitar">
   <h1 class="h1eve">Live Events at our Diner</h1>
   <div class="container-fluid">
 
-    <h2 class="h2eve">June</h2>
 <div class="row">
 <div class="col-sm-6">
+  <h2 class="h2eve">June</h2>
 <!-- Event 1 -->
   <div class="boxeve">
     <div class="datebox">
@@ -60,7 +68,7 @@
       <div class="date">5</div>
       <div class="hour">8-11pm</div>
   </div>
-    <h3 class="h3eve">MICHAEL P. JACKSON</h3>
+    <h3 class="h3eve">Mike "Al" Jackson</h3>
     <p class="peve">Tribute band</P>
   </div>
 
@@ -71,8 +79,8 @@
       <div class="date">12</div>
       <div class="hour">8-11pm</div>
   </div>
-    <h3 class="h3eve">TEARS FOR GEARS</h3>
-    <p class="peve">Tribute band</P>
+    <h3 class="h3eve">Tears For Gears</h3>
+    <p class="peve">New wave tribute band</P>
   </div>
 
 <!-- Event 3 -->
@@ -82,7 +90,7 @@
       <div class="date">17</div>
       <div class="hour">8-11pm</div>
   </div>
-    <h3 class="h3eve">GG TOP</h3>
+    <h3 class="h3eve">GG Top</h3>
     <p class="peve">Tribute band</P>
   </div>
 
@@ -93,20 +101,71 @@
         <div class="date">28</div>
         <div class="hour">6-12pm</div>
       </div>
-        <h3 class="h3eve">WAVE-OKE NIGHT</h3>
+        <h3 class="h3eve">Wave-oke Night</h3>
+        <p class="peve">Your chance to sing</P>
+    </div>
+</div>
+
+
+<!-- right half of page  -->
+<div class="col-sm-6">
+
+  <h2 class="h2eve">July</h2>
+<!-- Event 1B -->
+  <div class="boxeve">
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">2</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">Bryan Atoms</h3>
+    <p class="peve">Tribute band</P>
+  </div>
+
+<!-- Event 2B -->
+  <div class="boxeve">
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">9</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">The Crash</h3>
+    <p class="peve">Punk tribute band</P>
+  </div>
+
+<!-- Event 3B -->
+  <div class="boxeve">
+    <div class="datebox">
+      <div class="day">Saturday</div>
+      <div class="date">16</div>
+      <div class="hour">8-11pm</div>
+  </div>
+    <h3 class="h3eve">Blam!</h3>
+    <p class="peve">Pop tribute band</P>
+  </div>
+
+<!-- event 4B -->
+    <div class="boxeve">
+      <div class="datebox">
+        <div class="day">Saturday</div>
+        <div class="date">23</div>
+        <div class="hour">6-12pm</div>
+      </div>
+        <h3 class="h3eve">Punk A-oke Night</h3>
         <p class="peve">your chance to sing</P>
     </div>
+</div>
+<div class="row">
+  <div class="col-sm-2"></div>
+    <div class="col-sm-8">
     <p class="pwhite"> next month we feature hair metal bands. Next week vote for your favourite band to be featured here.
-      for now check out <a href="http://www.laweekly.com/music/the-15-best-hair-metal-bands-of-all-time-4170807">www.laweekly.com </a> list of top hair metal bands </p>
+    for now check out <a href="http://www.laweekly.com/music/the-15-best-hair-metal-bands-of-all-time-4170807">www.laweekly.com </a> list of top hair metal bands </p>
+    </div>
+  <div class="col-sm-2"></div>
 </div>
-<!-- right half of page  -->
-    <div class="col-sm-6">  add somting </div>
-</div>
-
-<br>
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ijgbkqdeq1ri1cuntehdlig1l0%40group.calendar.google.com&amp;color=%23e770bd&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-
-
+  <div class="hidden-xs">
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ijgbkqdeq1ri1cuntehdlig1l0%40group.calendar.google.com&amp;color=%23e770bd&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
 </div>
 
 
